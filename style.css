@@ -1,0 +1,9 @@
+.neon {
+    text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
+}
+.neon-bg {
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+#board {
+    text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
+}
