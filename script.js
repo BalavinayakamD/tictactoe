@@ -47,7 +47,7 @@ function checkwin() {
     }
     if (!board.includes('')) {
         canplay = false;
-        satus.textContent = 'DRAW!!!!';
+        alert('DRAW!!!!');
     }
 }
 
