@@ -6,7 +6,7 @@ let board = ['', '', '', '', '', '', '', '', ''];
 let put = 'X';
 let canplay = true;
 
-const winningConditions = [
+const winningconditions = [
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
@@ -31,13 +31,13 @@ function start() {
 function xochange(index) {
     if (board[index] || !canplay) return;
     board[index] = put;
-    checkWin();
+    checkwin();
     put = put == 'X' ? 'O' : 'X';
     start();
 }
 
-function checkWin() {
-    for (const condition of winningConditions) {
+function checkwin() {
+    for (const condition of winningconditions) {
         const [a, b, c] = condition;
         if (board[a] && board[a] === board[b] && board[a] === board[c]) {
             canplay = false;
