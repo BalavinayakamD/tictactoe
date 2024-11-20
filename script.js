@@ -3,8 +3,12 @@ const satus = document.getElementById('status');
 const reset = document.getElementById('reset');
 
 let board = ['', '', '', '', '', '', '', '', ''];
-let put = 'X';
-let canplay = true;
+let canplay = false;
+var put;
+function player(p1){
+    put = p1;
+    canplay = true;
+}
 
 const winningconditions = [
     [0, 1, 2],
