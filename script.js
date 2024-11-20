@@ -6,8 +6,10 @@ let board = ['', '', '', '', '', '', '', '', ''];
 let canplay = false;
 var put;
 function player(p1){
+    let temp = document.getElementById('tempDiv');
     put = p1;
     canplay = true;
+    temp.remove();
 }
 
 const winningconditions = [
