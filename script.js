@@ -1,12 +1,12 @@
 const back = document.getElementById('board');
 const satus = document.getElementById('status');
 const reset = document.getElementById('reset');
+const temp = document.getElementById('tempDiv');
 
 let board = ['', '', '', '', '', '', '', '', ''];
 let canplay = false;
 var put;
 function player(p1){
-    let temp = document.getElementById('tempDiv');
     put = p1;
     canplay = true;
     temp.remove();
@@ -62,6 +62,7 @@ reset.addEventListener('click', () => {
     put = 'X';
     canplay = true;
     satus.textContent = '';
+    back.insertAdjacentElement('afterend',temp);
     start();
 });
 
